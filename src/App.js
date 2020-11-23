@@ -1,9 +1,15 @@
 import React from 'react';
+import './App.css';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
+import Column from './components/Column';
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className='ColumnContainer'>
+      <ThemeProvider theme={theme}>
+        <Column />
+      </ThemeProvider>
     </div>
   );
 }
