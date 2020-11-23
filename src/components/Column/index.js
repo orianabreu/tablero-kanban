@@ -1,10 +1,11 @@
 import React from 'react';
 import * as S from './styles';
+import MovableItem from '../MovableItem';
 
 export default function Column() {
     return (
         <S.MyColumn>
-            This is a Column
+            <MovableItem />
         </S.MyColumn>
     )
 }
