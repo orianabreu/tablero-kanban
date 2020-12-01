@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
-import './App.css';
 import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { TouchBackend } from 'react-dnd-touch-backend';
+import './App.css';
 
 const MovableItem = ({ name, index, moveCardHandler, setItems }) => {
 
